@@ -1,0 +1,18 @@
+unit uCalculadoraModel;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+  TCalculadoraModel = class
+    function Adicao(A, B: Double): Double;
+    function Subtracao(A, B: Double): Double;
+    function Multiplicacao(A, B: Double): Double;
+    function Divisao(A, B: Double): Double;
+  end;
+
+implementation
+
+end.

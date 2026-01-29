@@ -1,0 +1,46 @@
+unit uCalculadoraController;
+
+interface
+uses
+  System.SysUtils, uCalculadoraModel;
+
+type
+  TCalculadoraController = class
+    private
+    FModel: TCalculadoraController;
+
+    public
+    // Operações
+    function Somar(A, B: Double): Double;
+    function Subtrair(A, B: Double): Double;
+    function Dividir(A, B: Double): Double;
+    function Multiplicar(A, B: Double): Double;
+  end;
+
+
+implementation
+
+
+{ TCalculadoraController }
+
+function TCalculadoraController.Dividir(A, B: Double): Double;
+begin
+  Result := FModel.Dividir(A, B);
+end;
+
+function TCalculadoraController.Multiplicar(A, B: Double): Double;
+begin
+  Result := FModel.Multiplicar(A, B);
+end;
+
+function TCalculadoraController.Somar(A, B: Double): Double;
+begin
+  Result := FModel.Somar(A, B);
+end;
+
+function TCalculadoraController.Subtrair(A, B: Double): Double;
+begin
+  Result := FModel.Subtrair(A, B);
+end;
+
+end.
