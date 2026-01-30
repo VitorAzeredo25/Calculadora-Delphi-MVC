@@ -2,7 +2,7 @@ program Calculadora;
 
 uses
   Vcl.Forms,
-  uPrincipal in 'view\uPrincipal.pas' {Form1},
+  uPrincipal in 'view\uPrincipal.pas' {FrmCalculadora},
   uCalculadoraModel in 'model\uCalculadoraModel.pas',
   uCalculadoraController in 'controller\uCalculadoraController.pas';
 
@@ -11,6 +11,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmCalculadora, FrmCalculadora);
   Application.Run;
 end.

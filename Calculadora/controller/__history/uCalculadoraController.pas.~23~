@@ -1,0 +1,109 @@
+unit uCalculadoraController;
+
+interface
+uses
+  System.SysUtils, uCalculadoraModel;
+
+type
+
+  TOperacao = (opNenhuma, opSoma, opSubtracao, opMultiplicacao, opDivisao);
+
+  TCalculadoraController = class
+    private
+    FModel: TCalculadoraModel;
+
+    FDisplayAtual: String;
+    FValorAnterior: Double;
+    FOperacaoPendente: TOperacao;
+    FLimparDisplay: Boolean;
+
+    public
+    constructor Create(AModel: TCalculadoraModel);
+    destructor Destroy; override;
+
+    // Operações
+    function Somar(A, B: Double): Double;
+    function Subtrair(A, B: Double): Double;
+    function Dividir(A, B: Double): Double;
+    function Multiplicar(A, B: Double): Double;
+
+    procedure AdicionarNumero(Numero: Integer);
+    procedure DefinirOperacao(Operacao: TOperacao);
+    procedure Calcular;
+    procedure LimparTudo;
+
+
+    property DisplayText: String read FDisplayAtual;
+
+
+  end;
+
+
+implementation
+
+
+{ TCalculadoraController }
+
+constructor TCalculadoraController.Create(AModel: TCalculadoraModel);
+begin
+  inherited Create;
+  FModel := AModel;
+  LimparTudo;
+end;
+
+destructor TCalculadoraController.Destroy;
+begin
+  FModel.Free;
+  inherited;
+end;
+
+
+
+
+procedure TCalculadoraController.AdicionarNumero(Numero: Integer);
+begin
+
+end;
+
+procedure TCalculadoraController.Calcular;
+begin
+
+end;
+
+procedure TCalculadoraController.DefinirOperacao(Operacao: TOperacao);
+begin
+
+end;
+
+procedure TCalculadoraController.LimparTudo;
+begin
+  FDisplayAtual := '0';
+  FValorAnterior := 0;
+  FOperacaoPendente := opNenhuma;
+  FLimparDisplay := False;
+end;
+
+
+
+
+function TCalculadoraController.Dividir(A, B: Double): Double;
+begin
+  Result := FModel.Divisao(A, B);
+end;
+
+function TCalculadoraController.Multiplicar(A, B: Double): Double;
+begin
+  Result := FModel.Multiplicacao(A, B);
+end;
+
+function TCalculadoraController.Somar(A, B: Double): Double;
+begin
+  Result := FModel.Adicao(A, B);
+end;
+
+function TCalculadoraController.Subtrair(A, B: Double): Double;
+begin
+  Result := FModel.Subtracao(A, B);
+end;
+
+end.

@@ -1,7 +1,7 @@
-object Form1: TForm1
+object FrmCalculadora: TFrmCalculadora
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Calculadora'
   ClientHeight = 480
   ClientWidth = 461
   Color = clBtnFace
@@ -10,6 +10,8 @@ object Form1: TForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   TextHeight = 15
   object pnlComandos: TPanel
     Left = 0
@@ -21,10 +23,6 @@ object Form1: TForm1
     Color = clBtnShadow
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 88
-    ExplicitTop = 288
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlBotoes: TPanel
       AlignWithMargins = True
       Left = 3
@@ -34,10 +32,8 @@ object Form1: TForm1
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitHeight = 451
       object bbtnSete: TBitBtn
+        Tag = 7
         Left = 15
         Top = 8
         Width = 89
@@ -50,8 +46,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 0
+        OnClick = NumeroClick
       end
       object bbtnOito: TBitBtn
+        Tag = 8
         Left = 115
         Top = 8
         Width = 89
@@ -64,8 +62,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 1
+        OnClick = NumeroClick
       end
       object bbtnNove: TBitBtn
+        Tag = 9
         Left = 215
         Top = 8
         Width = 89
@@ -78,8 +78,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 2
+        OnClick = NumeroClick
       end
       object bbtnQuatro: TBitBtn
+        Tag = 4
         Left = 15
         Top = 99
         Width = 89
@@ -92,8 +94,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 3
+        OnClick = NumeroClick
       end
       object bbtnCinco: TBitBtn
+        Tag = 5
         Left = 115
         Top = 99
         Width = 89
@@ -106,8 +110,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 4
+        OnClick = NumeroClick
       end
       object bbtnSeis: TBitBtn
+        Tag = 6
         Left = 215
         Top = 99
         Width = 89
@@ -120,8 +126,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 5
+        OnClick = NumeroClick
       end
       object bbtnUm: TBitBtn
+        Tag = 1
         Left = 15
         Top = 190
         Width = 89
@@ -134,8 +142,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 6
+        OnClick = NumeroClick
       end
       object bbtnDois: TBitBtn
+        Tag = 2
         Left = 115
         Top = 190
         Width = 89
@@ -148,8 +158,10 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 7
+        OnClick = NumeroClick
       end
       object bbtnTres: TBitBtn
+        Tag = 3
         Left = 215
         Top = 190
         Width = 89
@@ -162,6 +174,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 8
+        OnClick = NumeroClick
       end
       object bbtnZero: TBitBtn
         Left = 115
@@ -176,6 +189,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 9
+        OnClick = NumeroClick
       end
     end
     object pnlOperacoes: TPanel
@@ -187,10 +201,6 @@ object Form1: TForm1
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 296
-      ExplicitTop = 120
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object bbtnIgual: TBitBtn
         AlignWithMargins = True
         Left = 3
@@ -206,7 +216,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 0
-        ExplicitTop = 3
+        OnClick = IgualClick
       end
       object bbtnMult: TBitBtn
         AlignWithMargins = True
@@ -223,8 +233,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 1
-        ExplicitLeft = 6
-        ExplicitTop = 11
+        OnClick = OperacaoClick
       end
       object bbtnDivi: TBitBtn
         AlignWithMargins = True
@@ -241,8 +250,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 2
-        ExplicitLeft = 6
-        ExplicitTop = 11
+        OnClick = OperacaoClick
       end
       object bbtnMenos: TBitBtn
         AlignWithMargins = True
@@ -259,8 +267,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 3
-        ExplicitLeft = 6
-        ExplicitTop = 11
+        OnClick = OperacaoClick
       end
       object bbtnMais: TBitBtn
         AlignWithMargins = True
@@ -277,8 +284,7 @@ object Form1: TForm1
         Font.Style = []
         ParentFont = False
         TabOrder = 4
-        ExplicitLeft = 6
-        ExplicitTop = 11
+        OnClick = OperacaoClick
       end
     end
     object pnlDisplay: TPanel
@@ -290,9 +296,6 @@ object Form1: TForm1
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 461
       object edtDisplay: TEdit
         Left = 0
         Top = 0
@@ -318,7 +321,6 @@ object Form1: TForm1
         Align = alBottom
         Alignment = taCenter
         TabOrder = 1
-        ExplicitTop = 80
       end
     end
   end

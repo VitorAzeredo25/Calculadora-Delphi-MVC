@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2026/01/29 08:11:48.599,=C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/01/29 08:52:43.411,K:\Sistema\VITORDSA\DelphiP\Calculadora\view\uPrincipal.pas=C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/01/29 08:52:43.411,K:\Sistema\VITORDSA\DelphiP\Calculadora\view\uPrincipal.dfm=C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2026/01/29 08:54:06.773,K:\Sistema\VITORDSA\DelphiP\Calculadora\Calculadora.dproj=C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2026/01/29 09:30:01.611,=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
-    <Transaction>2026/01/29 09:30:18.577,K:\Sistema\VITORDSA\DelphiP\Calculadora\model\uCalculadoraModel.pas=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
-    <Transaction>2026/01/29 09:32:23.129,=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
-    <Transaction>2026/01/29 09:32:36.988,K:\Sistema\VITORDSA\DelphiP\Calculadora\controller\uCalculadoraController.pas=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
+	<Transactions>
+    <Transaction>2026/01/29 08:11:48.000.599,=C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/29 08:52:43.000.411,C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.pas=K:\Sistema\VITORDSA\DelphiP\Calculadora\view\uPrincipal.pas</Transaction>
+    <Transaction>2026/01/29 08:52:43.000.411,C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Unit1.dfm=K:\Sistema\VITORDSA\DelphiP\Calculadora\view\uPrincipal.dfm</Transaction>
+    <Transaction>2026/01/29 08:54:06.000.773,C:\Users\vitor.azeredo\Documents\Embarcadero\Studio\Projects\Project1.dproj=K:\Sistema\VITORDSA\DelphiP\Calculadora\Calculadora.dproj</Transaction>
+    <Transaction>2026/01/29 09:30:01.000.611,=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2026/01/29 09:30:18.000.577,K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas=K:\Sistema\VITORDSA\DelphiP\Calculadora\model\uCalculadoraModel.pas</Transaction>
+    <Transaction>2026/01/29 09:32:23.000.129,=K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2026/01/29 09:32:36.000.988,K:\Sistema\VITORDSA\DelphiP\Calculadora\Unit1.pas=K:\Sistema\VITORDSA\DelphiP\Calculadora\controller\uCalculadoraController.pas</Transaction>
   </Transactions>
 </BorlandProject>

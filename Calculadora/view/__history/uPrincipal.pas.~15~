@@ -1,0 +1,64 @@
+unit uPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls,
+  uCalculadoraController;
+
+type
+  TFrmCalculadora = class(TForm)
+    pnlDisplay: TPanel;
+    pnlComandos: TPanel;
+    pnlBotoes: TPanel;
+    pnlOperacoes: TPanel;
+    bbtnSete: TBitBtn;
+    bbtnOito: TBitBtn;
+    bbtnNove: TBitBtn;
+    bbtnQuatro: TBitBtn;
+    bbtnCinco: TBitBtn;
+    bbtnSeis: TBitBtn;
+    bbtnUm: TBitBtn;
+    bbtnDois: TBitBtn;
+    bbtnTres: TBitBtn;
+    bbtnZero: TBitBtn;
+    edtDisplay: TEdit;
+    edtHist: TEdit;
+    bbtnIgual: TBitBtn;
+    bbtnMult: TBitBtn;
+    bbtnDivi: TBitBtn;
+    bbtnMenos: TBitBtn;
+    bbtnMais: TBitBtn;
+  private
+    { Private declarations }
+    FController: TCalculadoraController;
+  public
+    { Public declarations }
+    constructor Create(AOwner: TComponent); override;
+    procedure BtnNumeroClick(Sender: TObject);
+  end;
+
+var
+  FrmCalculadora: TFrmCalculadora;
+
+implementation
+
+{$R *.dfm}
+
+{ TFrmCalculadora }
+
+
+
+
+procedure TFrmCalculadora.BtnNumeroClick(Sender: TObject);
+var
+  Numero: Integer;
+begin
+  Numero := (Sender as TBitBtn).Tag;
+  FController.AdicionarNumero(Numero);
+
+  edtDisplay.Text := FController.DisplayText;
+end;
+
+end.

@@ -1,0 +1,325 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 461
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object pnlComandos: TPanel
+    Left = 0
+    Top = 0
+    Width = 461
+    Height = 480
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clBtnShadow
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 88
+    ExplicitTop = 288
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object pnlBotoes: TPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 114
+      Width = 321
+      Height = 363
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitHeight = 451
+      object bbtnSete: TBitBtn
+        Left = 15
+        Top = 8
+        Width = 89
+        Height = 81
+        Caption = '7'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object bbtnOito: TBitBtn
+        Left = 115
+        Top = 8
+        Width = 89
+        Height = 81
+        Caption = '8'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object bbtnNove: TBitBtn
+        Left = 215
+        Top = 8
+        Width = 89
+        Height = 81
+        Caption = '9'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object bbtnQuatro: TBitBtn
+        Left = 15
+        Top = 99
+        Width = 89
+        Height = 81
+        Caption = '4'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
+      object bbtnCinco: TBitBtn
+        Left = 115
+        Top = 99
+        Width = 89
+        Height = 81
+        Caption = '5'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object bbtnSeis: TBitBtn
+        Left = 215
+        Top = 99
+        Width = 89
+        Height = 81
+        Caption = '6'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+      end
+      object bbtnUm: TBitBtn
+        Left = 15
+        Top = 190
+        Width = 89
+        Height = 81
+        Caption = '1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 6
+      end
+      object bbtnDois: TBitBtn
+        Left = 115
+        Top = 190
+        Width = 89
+        Height = 81
+        Caption = '2'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 7
+      end
+      object bbtnTres: TBitBtn
+        Left = 215
+        Top = 190
+        Width = 89
+        Height = 81
+        Caption = '3'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 8
+      end
+      object bbtnZero: TBitBtn
+        Left = 115
+        Top = 278
+        Width = 89
+        Height = 81
+        Caption = '0'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 9
+      end
+    end
+    object pnlOperacoes: TPanel
+      AlignWithMargins = True
+      Left = 330
+      Top = 114
+      Width = 128
+      Height = 363
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 296
+      ExplicitTop = 120
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+      object bbtnIgual: TBitBtn
+        AlignWithMargins = True
+        Left = 3
+        Top = 291
+        Width = 122
+        Height = 66
+        Align = alTop
+        Caption = '='
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        ExplicitTop = 3
+      end
+      object bbtnMult: TBitBtn
+        AlignWithMargins = True
+        Left = 3
+        Top = 219
+        Width = 122
+        Height = 66
+        Align = alTop
+        Caption = #215
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        ExplicitLeft = 6
+        ExplicitTop = 11
+      end
+      object bbtnDivi: TBitBtn
+        AlignWithMargins = True
+        Left = 3
+        Top = 147
+        Width = 122
+        Height = 66
+        Align = alTop
+        Caption = #247
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        ExplicitLeft = 6
+        ExplicitTop = 11
+      end
+      object bbtnMenos: TBitBtn
+        AlignWithMargins = True
+        Left = 3
+        Top = 75
+        Width = 122
+        Height = 66
+        Align = alTop
+        Caption = #8722
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+        ExplicitLeft = 6
+        ExplicitTop = 11
+      end
+      object bbtnMais: TBitBtn
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 122
+        Height = 66
+        Align = alTop
+        Caption = '+'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+        ExplicitLeft = 6
+        ExplicitTop = 11
+      end
+    end
+    object pnlDisplay: TPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 455
+      Height = 105
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 461
+      object edtDisplay: TEdit
+        Left = 0
+        Top = 0
+        Width = 455
+        Height = 82
+        Align = alClient
+        Alignment = taRightJustify
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -45
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        Text = '0'
+        ExplicitHeight = 69
+      end
+      object edtHist: TEdit
+        Left = 0
+        Top = 82
+        Width = 455
+        Height = 23
+        Align = alBottom
+        Alignment = taCenter
+        TabOrder = 1
+        ExplicitTop = 80
+      end
+    end
+  end
+end
